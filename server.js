@@ -8,12 +8,9 @@ require('dotenv').config();
 
 const dburi = process.env.DB_URI;
 
-// mongoose.connect(dburi,{
-//     useNewUrlParser: true,
-//             useUnifiedTopology: true
-// })
 
-mongoose.connect(process.env.DB_URI, {
+
+mongoose.connect(dburi, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
